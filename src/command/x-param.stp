@@ -1,0 +1,4 @@
+prboe begin
+{
+	printf("pid:%d\n",target());
+}

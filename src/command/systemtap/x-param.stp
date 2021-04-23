@@ -1,0 +1,5 @@
+probe begin
+{
+	printf("pid:%d\n",target());
+	exit();
+}

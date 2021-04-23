@@ -1,0 +1,10 @@
+global flag = 0;
+
+probe begin {
+	if (flag == 0) {
+		printf("flag == 0\n");
+	} else {
+		printf("flag != 0\n");
+	}
+	exit();
+}

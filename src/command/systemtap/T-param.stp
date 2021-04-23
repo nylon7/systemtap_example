@@ -1,0 +1,9 @@
+global count
+
+probe timer.s(1) {
+	count += 1;
+}
+
+probe end {
+	printf("time:%d\n",count);
+}
