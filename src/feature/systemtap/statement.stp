@@ -1,0 +1,7 @@
+probe process("./a.out").statement("main@/home/nylon7/project/systemtap_example/src/feature/c_source/statement.c:7") {
+	printf("systemtap probe line 7 local_var = %d\n", $local_var);
+}
+
+probe process("./a.out").statement("main@/home/nylon7/project/systemtap_example/src/feature/c_source/statement.c:9") {
+	printf("systemtap probe line 9 local_var = %d\n", $local_var);
+}
