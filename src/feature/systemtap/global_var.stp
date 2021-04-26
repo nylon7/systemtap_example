@@ -1,0 +1,23 @@
+probe process("./a.out").function("func").call {
+	printf("call func g = %d\n",@var("g@global_var.c"));
+}
+
+probe process("./a.out").function("func") {
+	printf("func g = %d\n",@var("g@global_var.c"));
+}
+
+probe process("./a.out").function("func").return {
+	printf("return func g = %d\n",@var("g@global_var.c"));
+}
+
+probe process("./a.out").function("sum").call {
+	printf("call SUM g = %d\n",@var("g@global_var.c"));
+}
+
+probe process("./a.out").function("sum") {
+	printf("SUM g = %d\n",@var("g@global_var.c"));
+}
+
+probe process("./a.out").function("sum").return {
+	printf("return g = %d\n",@var("g@global_var.c"));
+}
