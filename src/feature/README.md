@@ -10,3 +10,5 @@ e.g. sudo stap dynamic_probe_function.stp 'kernel.function("sys_open")'
 sudo stap global_var.stp -c ./a.out
 # display struct context
 ./display_struct_context.sh
+# display global strcut context
+sudo stap display_global_struct.stp
