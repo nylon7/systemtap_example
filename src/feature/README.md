@@ -8,3 +8,5 @@ sudo stap dynamic_probe_function.stp 'function probe'
 e.g. sudo stap dynamic_probe_function.stp 'kernel.function("sys_open")'
 # monitor global variables
 sudo stap global_var.stp -c ./a.out
+# display struct context
+./display_struct_context.sh
