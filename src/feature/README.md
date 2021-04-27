@@ -20,4 +20,6 @@ sudo stap local_var.stp -c ./a.out
 sudo stap associative_array.stp
 # find out element in associative array
 sudo stap find_out_element_in_array.stp
+# statistical aggregates
+sudo stap statistical.stp -T 4
 
