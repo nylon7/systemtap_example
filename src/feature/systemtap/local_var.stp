@@ -1,0 +1,14 @@
+probe process("./a.out").function("func").call {
+	printf("call func vars = %s\n",$$vars);
+	printf("call func vars = %s\n",$$vars$);
+	printf("call func parms = %s\n",$$parms);
+	printf("call func parms = %s\n",$$parms$);
+	printf("call func locals = %s\n",$$locals);
+	printf("call func locals = %s\n",$$locals$);
+}
+
+probe process("./a.out").function("func").return {
+	printf("call func return = %s\n",$$return);
+	printf("call func return = %s\n",$$return$);
+
+}
