@@ -14,3 +14,8 @@ sudo stap global_var.stp -c ./a.out
 sudo stap display_global_struct.stp
 # typecasting
 sudo stap cast.stp -c ./a.out 
+# display local variables
+sudo stap local_var.stp -c ./a.out
+# associative array
+sudo stap associative_array.stp
+
