@@ -12,3 +12,5 @@ sudo stap global_var.stp -c ./a.out
 ./display_struct_context.sh
 # display global strcut context
 sudo stap display_global_struct.stp
+# typecasting
+sudo stap cast.stp -c ./a.out 

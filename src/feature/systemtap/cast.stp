@@ -1,0 +1,3 @@
+probe process("./a.out").function("func").call {
+		printf("call func g=%d\n",@cast($p,"Test")->a);
+}
